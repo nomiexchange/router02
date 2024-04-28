@@ -1,0 +1,1169 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/IERC20.sol": {
+      "lastModificationDate": 1704862565418,
+      "contentHash": "3d2b948a9266ee66b6e739de97c7e6e9",
+      "sourceName": "contracts/interfaces/IERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IERC20"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/examples/ExampleSwapToPrice.sol": {
+      "lastModificationDate": 1710236491660,
+      "contentHash": "d9e3e74988135eb4fa420b926aef42ef",
+      "sourceName": "contracts/examples/ExampleSwapToPrice.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "@nomiswap/lib/contracts/libraries/Babylonian.sol",
+        "@nomiswap/lib/contracts/libraries/TransferHelper.sol",
+        "../libraries/NomiswapV2LiquidityMathLibrary.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/INomiswapV2Router01.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/NomiswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSwapToPrice"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/libraries/SafeMath.sol": {
+      "lastModificationDate": 1704862565421,
+      "contentHash": "9f77127a0e2c55c2058453327e84bde3",
+      "sourceName": "contracts/libraries/SafeMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "SafeMath"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/examples/ExampleSlidingWindowOracle.sol": {
+      "lastModificationDate": 1710236492566,
+      "contentHash": "dc82094a146409fbfebd69ff2a4891f7",
+      "sourceName": "contracts/examples/ExampleSlidingWindowOracle.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "@nomiswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/SafeMath.sol",
+        "../libraries/NomiswapV2Library.sol",
+        "../libraries/NomiswapV2OracleLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleSlidingWindowOracle"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/examples/ExampleOracleSimple.sol": {
+      "lastModificationDate": 1710236491986,
+      "contentHash": "e2f18f3d94ba8c795b5fd09453756624",
+      "sourceName": "contracts/examples/ExampleOracleSimple.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "@nomiswap/lib/contracts/libraries/FixedPoint.sol",
+        "../libraries/NomiswapV2OracleLibrary.sol",
+        "../libraries/NomiswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleOracleSimple"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/test/ERC20.sol": {
+      "lastModificationDate": 1704862565423,
+      "contentHash": "3c84c6f456884e55b360a8450d0f0446",
+      "sourceName": "contracts/test/ERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ERC20"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/test/DeflatingERC20.sol": {
+      "lastModificationDate": 1710240541803,
+      "contentHash": "4008e863d6f17bddac5eb73a053ed3d5",
+      "sourceName": "contracts/test/DeflatingERC20.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/SafeMath.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "DeflatingERC20"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/IWETH.sol": {
+      "lastModificationDate": 1704862565419,
+      "contentHash": "270f2c1a1f22475259d5a2f6a524f72e",
+      "sourceName": "contracts/interfaces/IWETH.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "IWETH"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/examples/ExampleFlashSwap.sol": {
+      "lastModificationDate": 1710236492803,
+      "contentHash": "a16bc97f4b1a9b18b6c6850e7e2456ff",
+      "sourceName": "contracts/examples/ExampleFlashSwap.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Callee.sol",
+        "../libraries/NomiswapV2Library.sol",
+        "../interfaces/V1/INomiswapV1Factory.sol",
+        "../interfaces/V1/INomiswapV1Exchange.sol",
+        "../interfaces/INomiswapV2Router01.sol",
+        "../interfaces/IERC20.sol",
+        "../interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleFlashSwap"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/test/RouterEventEmitter.sol": {
+      "lastModificationDate": 1710231410867,
+      "contentHash": "cf4a9acf9cd1c288370e063a39a1071b",
+      "sourceName": "contracts/test/RouterEventEmitter.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../interfaces/INomiswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "RouterEventEmitter"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/examples/ExampleComputeLiquidityValue.sol": {
+      "lastModificationDate": 1710231410867,
+      "contentHash": "b0ead0d71d55a8a2844e709dcf33f384",
+      "sourceName": "contracts/examples/ExampleComputeLiquidityValue.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../libraries/NomiswapV2LiquidityMathLibrary.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "ExampleComputeLiquidityValue"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/test/WETH9.sol": {
+      "lastModificationDate": 1704862565424,
+      "contentHash": "c60afbcd54ec9da3b3908e2db56c0d12",
+      "sourceName": "contracts/test/WETH9.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "WETH9"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/NomiswapV2Migrator.sol": {
+      "lastModificationDate": 1710236608071,
+      "contentHash": "21fc2c40bd2e13e8f229f55464c5cc49",
+      "sourceName": "contracts/NomiswapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/INomiswapV2Migrator.sol",
+        "./interfaces/V1/INomiswapV1Factory.sol",
+        "./interfaces/V1/INomiswapV1Exchange.sol",
+        "./interfaces/INomiswapV2Router01.sol",
+        "./interfaces/IERC20.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "NomiswapV2Migrator"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/INomiswapV2Migrator.sol": {
+      "lastModificationDate": 1710236644177,
+      "contentHash": "f00fb59d12ac560b20b47b061b9717c9",
+      "sourceName": "contracts/interfaces/INomiswapV2Migrator.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV2Migrator"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/V1/INomiswapV1Exchange.sol": {
+      "lastModificationDate": 1710236656609,
+      "contentHash": "d7aeee1a78a6fd312566553f89d2afe7",
+      "sourceName": "contracts/interfaces/V1/INomiswapV1Exchange.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV1Exchange"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/INomiswapV2Router01.sol": {
+      "lastModificationDate": 1710236647808,
+      "contentHash": "dbb1d55be880c5b6b53860b01204175a",
+      "sourceName": "contracts/interfaces/INomiswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "INomiswapV2Router01"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/V1/INomiswapV1Factory.sol": {
+      "lastModificationDate": 1710236659776,
+      "contentHash": "4c613f8ed82fcc2228be2163b1008788",
+      "sourceName": "contracts/interfaces/V1/INomiswapV1Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV1Factory"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/lib/contracts/libraries/TransferHelper.sol": {
+      "lastModificationDate": 1710236433215,
+      "contentHash": "7fad4038612c5f040ebd746a3e58e0db",
+      "sourceName": "@nomiswap/lib/contracts/libraries/TransferHelper.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.6.0"
+      ],
+      "artifacts": [
+        "TransferHelper"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/libraries/NomiswapV2LiquidityMathLibrary.sol": {
+      "lastModificationDate": 1710236629661,
+      "contentHash": "330e557fb1eef0ae373a49e2a75d28be",
+      "sourceName": "contracts/libraries/NomiswapV2LiquidityMathLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+        "@nomiswap/lib/contracts/libraries/Babylonian.sol",
+        "@nomiswap/lib/contracts/libraries/FullMath.sol",
+        "./SafeMath.sol",
+        "./NomiswapV2Library.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "NomiswapV2LiquidityMathLibrary"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/libraries/NomiswapV2Library.sol": {
+      "lastModificationDate": 1711976883724,
+      "contentHash": "1fc85508684f6c28ec79ea7c601523dc",
+      "sourceName": "contracts/libraries/NomiswapV2Library.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "./SafeMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "NomiswapV2Library"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol": {
+      "lastModificationDate": 1710236433181,
+      "contentHash": "a1a3062060fca66303016a202ae63935",
+      "sourceName": "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV2Pair"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/lib/contracts/libraries/Babylonian.sol": {
+      "lastModificationDate": 1710236433214,
+      "contentHash": "3f7a9d2b13eebc20350a1cc42ed09b16",
+      "sourceName": "@nomiswap/lib/contracts/libraries/Babylonian.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "Babylonian"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol": {
+      "lastModificationDate": 1710236433184,
+      "contentHash": "d62fd2ffdb589f7fd34052674cf8dd8c",
+      "sourceName": "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV2Factory"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/lib/contracts/libraries/FullMath.sol": {
+      "lastModificationDate": 1710236433215,
+      "contentHash": "23bbd047cedfd8027fb139fcab949cc0",
+      "sourceName": "@nomiswap/lib/contracts/libraries/FullMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FullMath"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/lib/contracts/libraries/FixedPoint.sol": {
+      "lastModificationDate": 1710236433214,
+      "contentHash": "9c78b75695500ec38a85fea7d923fbf0",
+      "sourceName": "@nomiswap/lib/contracts/libraries/FixedPoint.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./FullMath.sol",
+        "./Babylonian.sol",
+        "./BitMath.sol"
+      ],
+      "versionPragmas": [
+        ">=0.4.0"
+      ],
+      "artifacts": [
+        "FixedPoint"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/lib/contracts/libraries/BitMath.sol": {
+      "lastModificationDate": 1710236433215,
+      "contentHash": "9268c1120c875c017e31caad9aa38921",
+      "sourceName": "@nomiswap/lib/contracts/libraries/BitMath.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "BitMath"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/libraries/NomiswapV2OracleLibrary.sol": {
+      "lastModificationDate": 1710236633524,
+      "contentHash": "7ac57ef3b24d67eb117f08287060e5dc",
+      "sourceName": "contracts/libraries/NomiswapV2OracleLibrary.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Pair.sol",
+        "@nomiswap/lib/contracts/libraries/FixedPoint.sol"
+      ],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "NomiswapV2OracleLibrary"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/NomiswapV2Router02.sol": {
+      "lastModificationDate": 1711977091801,
+      "contentHash": "f53d364796b430e3af90cc05f2a39d74",
+      "sourceName": "contracts/NomiswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+        "@nomiswap/lib/contracts/libraries/TransferHelper.sol",
+        "./interfaces/INomiswapV2Router02.sol",
+        "./libraries/NomiswapV2Library.sol",
+        "./libraries/SafeMath.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "NomiswapV2Router02"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/interfaces/INomiswapV2Router02.sol": {
+      "lastModificationDate": 1710236651160,
+      "contentHash": "ece770138397009023a59567f7d14762",
+      "sourceName": "contracts/interfaces/INomiswapV2Router02.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./INomiswapV2Router01.sol"
+      ],
+      "versionPragmas": [
+        ">=0.6.2"
+      ],
+      "artifacts": [
+        "INomiswapV2Router02"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/node_modules/@nomiswap/v2-core/contracts/interfaces/INomiswapV2Callee.sol": {
+      "lastModificationDate": 1710236433181,
+      "contentHash": "38def1f71064b3c57ce70db63c37cb21",
+      "sourceName": "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Callee.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.5.0"
+      ],
+      "artifacts": [
+        "INomiswapV2Callee"
+      ]
+    },
+    "/Users/gaoxinkai/Documents/unis/createContract/v2-periphery/contracts/NomiswapV2Router01.sol": {
+      "lastModificationDate": 1710236612651,
+      "contentHash": "c769e674822b9e12d9ada71db386679d",
+      "sourceName": "contracts/NomiswapV2Router01.sol",
+      "solcConfig": {
+        "version": "0.6.6",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 1000
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@nomiswap/v2-core/contracts/interfaces/INomiswapV2Factory.sol",
+        "@nomiswap/lib/contracts/libraries/TransferHelper.sol",
+        "./libraries/NomiswapV2Library.sol",
+        "./interfaces/INomiswapV2Router01.sol",
+        "./interfaces/IERC20.sol",
+        "./interfaces/IWETH.sol"
+      ],
+      "versionPragmas": [
+        "=0.6.6"
+      ],
+      "artifacts": [
+        "NomiswapV2Router01"
+      ]
+    }
+  }
+}

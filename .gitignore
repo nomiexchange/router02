@@ -1,0 +1,5 @@
+build/
+node_modules/
+hardhat.config.js
+script/deploy.js
+.history/*
